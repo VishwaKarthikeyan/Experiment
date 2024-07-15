@@ -1,0 +1,114 @@
+{
+  "resourceGroup": [
+    {
+      "isExists": "yes",
+      "name": "abg-ebay-qa-cdo-eus-01",
+      "subscriptionName": "abg-nonprod-01-sub"
+    },
+    {
+      "isExists": "yes",
+      "name": "abg-virtualcr-dev-eus-01-rg",
+      "subscriptionName": "abg-non-prod-am-01-sub"
+    },
+    {
+      "isExists": "no",
+      "name": "abg-e2e-waste-nonprod-eus-01-rg",
+      "subscriptionName": "abg-datahub-nonprod-01-sub"
+    }
+  ],
+  "sqlServer": [
+    {
+      "isExists": "yes",
+      "resourceName": "ebayqacdo-pdm-sqlserver",
+      "subscriptionName": "abg-nonprod-01-sub",
+      "resourceGroupName": "abg-ebay-qa-cdo-eus-01",
+      "Networking": {
+        "serviceEndpoints": {
+          "vNetWhitelisting": [
+            {
+              "subscriptionName": "abg-datahub-nonprod-01-sub",
+              "virtualNetworkName": "abg-nonprod-datahub-02-eus-vnet",
+              "subnetName": "abg-restricted-02-subnet"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "dataFactory": [
+    {
+      "isExists": "yes",
+      "resourceName": "ebay-virtualcr-dev-adf",
+      "subscriptionName": "abg-non-prod-am-01-sub",
+      "resourceGroupName": "abg-virtualcr-dev-eus-01-rg",
+      "Networking": {
+        "serviceEndpoints": {
+          "vNetWhitelisting": [
+            {
+              "subscriptionName": "abg-datahub-nonprod-01-sub",
+              "virtualNetworkName": "abg-nonprod-datahub-02-eus-vnet",
+              "subnetName": "abg-restricted-02-subnet"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "synapseAnalytics": [
+    {
+      "isExists": "yes",
+      "resourceName": "ebayvirtualcrsynwsdev",
+      "subscriptionName": "abg-non-prod-am-01-sub",
+      "resourceGroupName": "abg-virtualcr-dev-eus-01-rg",
+      "Networking": {
+        "serviceEndpoints": {
+          "vNetWhitelisting": [
+            {
+              "subscriptionName": "abg-datahub-nonprod-01-sub",
+              "virtualNetworkName": "abg-nonprod-datahub-02-eus-vnet",
+              "subnetName": "abg-restricted-02-subnet"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "blobStorage": [
+    {
+      "isExists": "no",
+      "resourceName": "ebayapplecmdevblob",
+      "subscriptionName": "abg-datahub-nonprod-01-sub",
+      "resourceGroupName": "abg-e2e-waste-nonprod-eus-01-rg",
+      "Networking": {
+        "serviceEndpoints": {
+          "vNetWhitelisting": [
+            {
+              "subscriptionName": "abg-datahub-nonprod-01-sub",
+              "virtualNetworkName": "abg-nonprod-datahub-02-eus-vnet",
+              "subnetName": "abg-restricted-02-subnet"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "adlsStorage": [
+    {
+      "isExists": "no",
+      "resourceName": "ebayapplecmdevadls",
+      "subscriptionName": "abg-datahub-nonprod-01-sub",
+      "resourceGroupName": "abg-e2e-waste-nonprod-eus-01-rg",
+      "Networking": {
+        "serviceEndpoints": {
+          "vNetWhitelisting": [
+            {
+              "subscriptionName": "abg-datahub-nonprod-01-sub",
+              "virtualNetworkName": "abg-nonprod-datahub-02-eus-vnet",
+              "subnetName": "abg-restricted-02-subnet"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
