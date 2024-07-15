@@ -35,7 +35,27 @@ Prompt engineering involves crafting clear and detailed prompts that guide users
   <img src="https://github.com/user-attachments/assets/24b4f2cd-e4e0-4c35-bf71-f94518cabadf" alt="image" width="800" height="auto">
 </p>
 
-[<img src="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/json.png" alt="logo" width="100" height="auto">](https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/actual.json)
+<p align="center">
+  <table>
+    <tr>
+      <td style="text-align:center">
+        <h3>Actual JSON</h3>
+        <a href="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/actual.json">
+            <img src="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/Capture.PNG" alt="Actual JSON" width="100">
+        </a>
+      </td>
+      <td style="text-align:center">
+        <h3>Generated JSON</h3>
+        <a href="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/generated.json">
+            <img src="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/Capture.PNG" alt="Generated JSON" width="100">
+        </a>
+      </td>
+    </tr>
+  </table>
+  </p>
+
+
+
 
 
 
