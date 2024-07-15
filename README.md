@@ -18,15 +18,15 @@ In developing an automated solution for analyzing architecture diagrams, the app
 
 ## System Role:
 
-Messages assigned the "system" role play a foundational role in providing essential resources and setting the groundwork for effective interaction. These messages are designed to equip users with necessary templates, explanatory content, and visual aids. For example, they include a template JSON structure that exemplifies the expected format of output data, ensuring consistency and accuracy in representations of complex systems. Additionally, these messages offer detailed instructions on interpreting diagrams, highlighting key components such as system components, resource groups, and various services. Visual examples accompanying these instructions enhance comprehension, illustrating concepts like resource existence and network connectivity criteria based on diagrammatic cues. By equipping users with structured information and visual aids, the "system" messages facilitate a clear and systematic approach to automating the extraction and analysis of system architecture data.
+Messages labeled "system" provide essential templates, explanations, and visual aids. They include a JSON template for consistent system data representation and clear instructions on diagram interpretation, highlighting key components like system elements, resource groups, and services. Visual examples illustrate concepts such as resource existence and network connectivity. These messages ensure a systematic approach to automating system architecture data analysis.
 
 ## User Role:
-Conversely, messages assigned the "user" role simulate the expected interaction and responses from users. These messages guide users through practical steps and directives on effectively navigating and extracting information from system architecture diagrams. For instance, they provide detailed instructions on identifying specific resources, capturing networking details based on visual indicators such as arrow line colors, and ensuring precision in documenting outputs. They outline criteria for accurately determining resource status (existing or new) by interpreting background colors and block fill patterns within the diagrams. Furthermore, the "user" messages present real-world examples and scenarios, illustrating correct and incorrect practices in output generation. By following these instructions, users can streamline the process of generating representations that reflect the intricate configurations of system environments accurately.
+Messages labeled "user" guide practical steps for navigating system architecture diagrams. They detail how to identify resources, interpret networking details from visual cues, and accurately document outputs. They clarify criteria for determining resource status within diagrams. Real-world examples demonstrate correct and incorrect practices in output generation, ensuring accurate representations of system configurations.
 
 
 # Prompt Engineering
 
-Prompt engineering involves crafting clear and detailed prompts that guide users or automated systems through tasks effectively. This process includes two essential types of prompts: instructions for generating JSON and examples pairing architecture diagrams with corresponding JSON outputs. Instructions outline steps, criteria, and formatting requirements to produce accurate JSON representations from input data. Examples provide visual and textual demonstrations, illustrating how to interpret diagrams and structure JSON outputs according to specified guidelines. This approach ensures tasks are streamlined, validated, and optimized for clarity and accuracy in handling complex data interpretation and output generation tasks.
+Prompt engineering involves crafting clear, concise prompts to guide users or automated systems effectively. This includes instructions for generating JSON and examples pairing diagrams with corresponding JSON outputs. Instructions outline steps, criteria, and formatting requirements for accurate data representation. Examples provide visual and textual demonstrations, ensuring clarity and accuracy in complex data interpretation and output generation tasks.
 
 
 # Example
@@ -35,24 +35,12 @@ Prompt engineering involves crafting clear and detailed prompts that guide users
   <img src="https://github.com/user-attachments/assets/24b4f2cd-e4e0-4c35-bf71-f94518cabadf" alt="image" width="800" height="auto">
 </p>
 
-<p align="center">
-  <table>
-    <tr>
-      <td style="text-align:center">
-        <h3>Actual</h3>
-        <a href="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/actual.json">
-            <img src="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/Capture.PNG" alt="Actual JSON" width="100">
-        </a>
-      </td>
-      <td style="text-align:center">
-        <h3>Generated</h3>
-        <a href="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/generated.json">
-            <img src="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/Capture.PNG" alt="Generated JSON" width="100">
-        </a>
-      </td>
-    </tr>
-  </table>
-  </p>
+![image](https://github.com/user-attachments/assets/c940a80b-faa7-49c3-aa59-8f2ab1d418a3)
+
+
+
+
+
 
 
 
