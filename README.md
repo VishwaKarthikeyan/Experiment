@@ -39,13 +39,13 @@ Prompt engineering involves crafting clear and detailed prompts that guide users
   <table>
     <tr>
       <td style="text-align:center">
-        <h3>Actual JSON</h3>
+        <h3>Actual</h3>
         <a href="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/actual.json">
             <img src="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/Capture.PNG" alt="Actual JSON" width="100">
         </a>
       </td>
       <td style="text-align:center">
-        <h3>Generated JSON</h3>
+        <h3>Generated</h3>
         <a href="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/generated.json">
             <img src="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/Capture.PNG" alt="Generated JSON" width="100">
         </a>
