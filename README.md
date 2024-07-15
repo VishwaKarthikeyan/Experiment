@@ -28,4 +28,14 @@ Conversely, messages assigned the "user" role simulate the expected interaction 
 
 Prompt engineering involves crafting clear and detailed prompts that guide users or automated systems through tasks effectively. This process includes two essential types of prompts: instructions for generating JSON and examples pairing architecture diagrams with corresponding JSON outputs. Instructions outline steps, criteria, and formatting requirements to produce accurate JSON representations from input data. Examples provide visual and textual demonstrations, illustrating how to interpret diagrams and structure JSON outputs according to specified guidelines. This approach ensures tasks are streamlined, validated, and optimized for clarity and accuracy in handling complex data interpretation and output generation tasks.
 
-![image](https://github.com/user-attachments/assets/6ece3bdd-fdd0-4e38-af7a-c97dd90f6c9e)
+
+# Example
+
+
+
+
+
+
+
+
+
