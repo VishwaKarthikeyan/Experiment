@@ -1,4 +1,4 @@
-# Introduction Overview
+# Objective
 
 This project focuses on automating the extraction and analysis of architecture diagrams to identify and categorize Azure resources and their configurations. The primary output is structured in JSON format, facilitating automation of resource management tasks within Azure environments.
 
@@ -35,7 +35,7 @@ Prompt engineering involves crafting clear and detailed prompts that guide users
   <img src="https://github.com/user-attachments/assets/24b4f2cd-e4e0-4c35-bf71-f94518cabadf" alt="image" width="800" height="auto">
 </p>
 
-[<img src="https://github.com/user-attachments/assets/d443f32a-427e-40d4-9a1c-4a00bf553ac6" alt="logo" width="100" height="auto">](https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/actual.json)
+[<img src="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/json.png" alt="logo" width="100" height="auto">](https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/actual.json)
 
 
 
