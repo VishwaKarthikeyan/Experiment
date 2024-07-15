@@ -2,13 +2,17 @@
 
 Solution architects frequently encounter complex architecture diagrams that depict various components, connections, and relationships within a system or application. Analyzing and interpreting these diagrams manually can be time-consuming and prone to errors. This project harnesses Azure OpenAI's advanced capabilities to automate this process effectively.
 
-![image](https://github.com/user-attachments/assets/3dc8e5fc-a092-4fbd-a44c-8da34d9bbf09)
+**Architecture Diagram**
+![Slide17](https://github.com/user-attachments/assets/89417a87-288c-4667-88d4-97ddd7456614)
+
 
 
 ## Implementation and Integration
-To integrate Azure OpenAI effectively, the project begins with configuring API credentials, specifically the api_key and endpoint, ensuring they are correctly set up for seamless communication with Azure services. This step is crucial as it establishes the foundation for accessing Azure OpenAI's capabilities securely and reliably.
+**System Messages**: These messages establish the user's role as an Azure cloud engineering expert and set the context for interpreting architecture diagrams. They outline the objective of generating JSON outputs based on the information extracted from the diagrams. A template JSON example is provided to illustrate the expected format of the output, ensuring clarity and alignment with project goals.
 
-Preparation of architecture diagram inputs involves encoding images into base64 format and organizing associated JSON metadata. This ensures that inputs are formatted according to Azure OpenAI's requirements, facilitating accurate interpretation and analysis. Once prepared, the project executes requests to Azure OpenAI, transmitting encoded diagrams and metadata for processing. Upon receiving responses, the system handles JSON outputs, extracting structured insights that detail components, connections, and relevant attributes within the architecture diagrams. These insights are instrumental in guiding decision-making processes related to system design, integration strategies, and overall architectural planning.
+**User Instructions**: This section provides step-by-step instructions on how to extract specific information from architecture diagrams. Users are guided through identifying Azure subscriptions, resource groups, and various Azure services depicted in the diagrams. Detailed guidelines cover capturing networking details, exact parameter values, and interpreting visual cues such as background colors to differentiate between existing and new resources. Visual examples accompany these instructions to facilitate understanding and application.
+
+**Application and Examples**: Practical examples of architecture diagrams and their corresponding JSON outputs demonstrate how to apply the provided instructions effectively. These examples showcase real-world scenarios and highlight key considerations in diagram interpretation and JSON output generation. Each example is designed to reinforce best practices and enhance user proficiency in utilizing Azure OpenAI for architectural analysis.
 
 ![image](https://github.com/user-attachments/assets/de29e2ef-cdc3-49bd-82f0-123aa687c642)
 
