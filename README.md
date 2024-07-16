@@ -1,4 +1,4 @@
-# Objective
+# Introduction
 
 This project focuses on automating the extraction and analysis of architecture diagrams to identify and categorize Azure resources and their configurations. The primary output is structured in JSON format, facilitating automation of resource management tasks within Azure environments.
 
