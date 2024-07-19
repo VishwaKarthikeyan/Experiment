@@ -5,7 +5,7 @@ The primary objective of this project is to develop a robust system that can aut
 
 # Solution Overview
 <p align="center">
-  <img src="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/arch_sign.PNG" alt="image" width="800" height="auto">
+  <img src="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/arch_sign_2.PNG" alt="image" width="800" height="auto">
 </p>
 
 
