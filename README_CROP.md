@@ -10,6 +10,10 @@
 
 ## Data Acquisition
 
+<p align="center">
+  <img src="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/data_ac_crop.PNG" alt="image" width="800" height="auto">
+</p>
+
 **AWS Sagemaker**
 
 To develop a model predicting Corn yield using AWS Sagemaker, you’ll use a multi-faceted approach integrating various data sources. Initially, the field boundaries for Corn cultivation in the USA are obtained from Cropscape, while yield data at the county level is sourced from the USDA. Satellite imagery, crucial for model training, is retrieved from AWS Geospatial services using Sentinel data for the specified geolocations. AWS SageMaker notebooks facilitate this process, and relevant weather information is integrated via APIs. The provided code snippet demonstrates the initialization of AWS services, including SageMaker Geospatial and S3 clients, to manage data collection and processing efficiently. Data points are filtered based on criteria like cloud cover, and Earth Observation Jobs are created to process satellite imagery for specific time ranges and events. The collected imagery is then overlaid with crop cover data to visualize and analyze Corn cultivation.
@@ -20,9 +24,17 @@ To develop a model predicting Corn yield using Google Earth Engine (GEE), you st
 
 ## Data Pre-processing
 
+<p align="center">
+  <img src="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/hist_crop.PNG" alt="image" width="800" height="auto">
+</p>
+
 To analyze satellite images for vegetation assessment, you first compute vegetation indices such as NDVI, EVI, and MSAVI(for AWS Sagemaker Data) from the spectral bands (red, blue, green, and near-infrared). Using these indices and band data, you generate histograms of pixel values to visualize the distribution of each band. The histogram generation function requires the input image as a NumPy array and a parameter for the number of histogram bins, with a default set to 32 for granularity control. The function calculates histograms for each spectral band and vegetation index, then stacks these histograms, including data from different growth stages (planting, mid-growth, harvest), into a single composite histogram. This stacked histogram is then converted into a TensorFlow tensor for further analysis or modeling.
 
 ## Model Training
+
+<p align="center">
+  <img src="https://github.com/VishwaKarthikeyan/Experiment/blob/main/arch/model_crop.PNG" alt="image" width="800" height="auto">
+</p>
 
 After generating histogram data from satellite images, the data is formatted for model training, with additional weather features from the Daymet package integrated based on geographic coordinates and time ranges. Representative crop growth indices are computed from the satellite data and used as inputs for a CNN-LSTM network. This model, designed to predict county-level yield data, combines convolutional layers for feature extraction with LSTM layers for sequence modeling. The network processes images with dimensions of 32x13 over three time steps and employs dense layers for regression. Compiled with the Adam optimizer and mean squared error loss, the model is evaluated using metrics such as MSE, MAE, and MAPE to ensure accurate and reliable predictions.
 
